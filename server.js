@@ -20,8 +20,9 @@ app.set("views", path.join(__dirname, "views"));
 app.get("/", (req, res) => {
   res.render("index");
 });
-app.get("/adduser", (req, res) => {
-  res.render("adduser");
+
+app.get("/addbook", (req, res) => {
+  res.render("addbook");
 });
 
 app.use(express.json());
