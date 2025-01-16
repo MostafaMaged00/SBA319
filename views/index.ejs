@@ -5,11 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Book Store</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+      }
+
+      header {
+          background-color: #2a3d58;
+          color: white;
+          padding: 20px;
+          text-align: center;
+      }
+
+      header h1 {
+          margin: 0;
+      }
+
+      .container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      .intro {
+          text-align: center;
+          margin-top: 30px;
+      }
+
+      .intro h2 {
+          font-size: 2em;
+          color: #2a3d58;
+      }
+
+      .intro p {
+          font-size: 1.2em;
+          color: #555;
+      }
+
+      .book-section {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin-top: 30px;
+      }
+
+      .book-card {
+          background-color: #fff;
+          border-radius: 8px;
+          width: 30%;
+          margin-bottom: 20px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          text-align: center;
+      }
+
+      .book-card img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+      }
+
+      .book-card h3 {
+          font-size: 1.5em;
+          color: #333;
+          margin: 15px 0;
+      }
+
+      .book-card p {
+          font-size: 1em;
+          color: #666;
+      }
+
+      .cta-button {
+          background-color: #2a3d58;
+          color: white;
+          padding: 15px 30px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-size: 1.2em;
+          display: inline-block;
+          margin-top: 20px;
+      }
+
+      footer {
+          background-color: #2a3d58;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          margin-top: 30px;
+      }
+
+      footer a {
+          color: #fff;
+          text-decoration: none;
+      }
+  </style>
 </head>
 <body>
   
 <%- include('./partials/nav.ejs') %>
+<header>
+  <h1> Mostafa Bookstore App</h1>
+</header>
 
+<div class="container">
+  <section class="intro">
+      <h2>Discover Your Next Favorite Book</h2>
+      <p>Browse our collection of carefully curated books for all ages and interests. Whether you're into fiction, non-fiction, or children's books, we have something for everyone!</p>
+  </section>
+
+  <section class="book-section">
+      <div class="book-card">
+          <img src="https://bookoutlet.com/_next/image?url=https%3A%2F%2Fimages.bookoutlet.com%2Fcovers%2Flarge%2Fisbn978006%2F9780061775147-l.jpg&w=640&q=75" alt="Book 1">
+          <h3>Memoir</h3>
+          <p>A thrilling journey through time and space, full of twists and turns.</p>
+          <a href="#" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="book-card">
+          <img src="https://bookoutlet.com/_next/image?url=https%3A%2F%2Fimages.bookoutlet.com%2Fcovers%2Flarge%2Fisbn978132%2F9781328589828-l.jpg&w=640&q=75" alt="Book 2">
+          <h3>History Unveiled</h3>
+          <p>The City Of Lost Fortunes (A Crescent City Novel)</p>
+          <a href="#" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="book-card">
+          <img src="https://bookoutlet.com/_next/image?url=https%3A%2F%2Fimages.bookoutlet.com%2Fcovers%2Flarge%2Fisbn978006%2F9780063275911-l.jpg&w=640&q=75" alt="Book 3">
+          <h3>The Young Explorer</h3>
+          <p>A delightful children's book filled with adventure and fun!</p>
+          <a href="#" class="cta-button">Learn More</a>
+      </div>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 Mostafa Bookstore App | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+</footer>
 
   <script src="index.js"></script>
 </body>
