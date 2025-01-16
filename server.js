@@ -16,7 +16,10 @@ app.use(express.static("public")); //use static folder public
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
-//show the form
+//HomePage
+app.get("/", (req, res) => {
+  res.render("index");
+});
 app.get("/adduser", (req, res) => {
   res.render("adduser");
 });

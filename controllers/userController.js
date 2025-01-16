@@ -1,5 +1,7 @@
 //Imports
 const User = require("../models/User");
+const path = require("path");
+const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
 //function to get all users
 exports.listUsers = async (req, res) => {
